@@ -85,7 +85,6 @@ public class Rubik implements Serializable, Cloneable {
         ernoRubik[disco][0][1] = ernoRubik[disco][1][1];
         ernoRubik[disco][1][1] = ernoRubik[disco][1][0];
         ernoRubik[disco][1][0] = aux;
-        System.out.println("Movimiento H");
 
     }
 
@@ -111,7 +110,7 @@ public class Rubik implements Serializable, Cloneable {
         ernoRubik[0][disco][1] = ernoRubik[1][disco][1];
         ernoRubik[1][disco][1] = ernoRubik[1][disco][0];
         ernoRubik[1][disco][0] = aux;
-        System.out.println("Movimiento V");
+
     }
 
     /**
@@ -135,7 +134,7 @@ public class Rubik implements Serializable, Cloneable {
         ernoRubik[1][0][disco] = ernoRubik[1][1][disco];
         ernoRubik[1][1][disco] = ernoRubik[0][1][disco];
         ernoRubik[0][1][disco] = aux;
-        System.out.println("Movimiento T");
+
     }
 
     public Rubik clone() {
